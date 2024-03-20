@@ -24,7 +24,6 @@
 
         .modal {
             display: none;
-            /* Oculta el modal por defecto */
             position: fixed;
             z-index: 1;
             left: 0;
@@ -33,25 +32,22 @@
             height: 100%;
             overflow: auto;
             background-color: rgba(0, 0, 0, 0.9);
-            /* Fondo oscuro semitransparente */
+      
         }
 
         .modal-contenido {
             margin: auto;
             display: block;
             width: 50%;
-            /* Ancho del modal (ajustable) */
             max-width: 800px;
             height: 50%;
-            /* Altura del modal (ajustable) */
             max-height: 50%;
             overflow: auto;
-            /* Para permitir desplazamiento si la imagen es grande */
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            /* Centra el modal en la pantalla */
+
         }
 
         .modal-imagen {
@@ -61,7 +57,7 @@
 
         .contenido-adicional {
             display: none;
-            /* Oculta el contenido adicional por defecto */
+   
         }
 
         .imagenpro {
@@ -86,7 +82,7 @@
             animation-duration: 0ms;
             position: relative;
             left: 500px;
-            /* Mueve el elemento 50px hacia la derecha desde el borde izquierdo */
+      
         }
 
         .contenedor {
@@ -105,21 +101,20 @@
 
         .fotografia {
             position: absolute;
-            /* Esto establece el elemento como posición absoluta */
+  
             top: 90px;
-            /* Mueve el elemento 50px hacia abajo desde la parte superior */
+
             left: 20px;
-            /* Mueve el elemento 50px hacia la derecha desde el borde izquierdo */
+         
             width: 100px;
             height: 100px;
         }
 
         .descri {
-            /* Esto establece el elemento como posición absoluta */
+  
             top: 10px;
-            /* Mueve el elemento 50px hacia abajo desde la parte superior */
             left: 10px;
-            /* Mueve el elemento 50px hacia la derecha desde el borde izquierdo */
+            
             width: 250px;
             height: 250px
         }
@@ -134,7 +129,7 @@
             height: 180px;
             border-radius: 50%;
             overflow: hidden;
-            /* Para que la imagen se ajuste al borde redondeado */
+
         }
 
         .figuras {
@@ -142,7 +137,7 @@
             align-items: center;
             gap: 20px;
             margin-bottom: 50px;
-            /* Agregando margen entre las figuras */
+
         }
 
         .imagen {
@@ -159,7 +154,6 @@
 
         .descripcion {
             width: 50%;
-            /* Ocupa la mitad del espacio */
         }
 
         .descripcion p {
@@ -196,16 +190,13 @@
             justify-content: center;
             align-items: center;
             gap: 100px;
-            /* Espacio entre las figuras */
+
         }
 
         .poscubo {
             position: absolute;
-            /* Esto establece el elemento como posición absoluta */
             top: 900px;
-            /* Mueve el elemento 50px hacia abajo desde la parte superior */
             left: 1000px;
-            /* Mueve el elemento 50px hacia la derecha desde el borde izquierdo */
             width: 100px;
             height: 100px;
         }
@@ -400,7 +391,17 @@
                 <p>Certificado obtenido en la academia Shakespeare, la cual me sirvió para tener un nivel de inglés B1.</p>
             </div>
         </div>
-        <!-- Agregar más imágenes y descripciones aquí -->
+        <hr>
+        <div class="figuras">
+
+            <div>
+                <img class="imagen" src="Imagenes/certificado platzy py.png" alt="Imagen 2" onclick="abrirModal(this)">
+            </div>
+            <div class="descripcion">
+                <p>Certificado obtenido en Platzy, donde enseñaba Python desde cero hasta un nivel avanzado.</p>
+            </div>
+        </div>
+       
     </div>
 
     <footer class="footer">
