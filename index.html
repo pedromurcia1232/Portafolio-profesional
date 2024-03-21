@@ -32,14 +32,14 @@
             height: 100%;
             overflow: auto;
             background-color: rgba(0, 0, 0, 0.9);
-      
+           
         }
 
         .modal-contenido {
             margin: auto;
             display: block;
             width: 50%;
-            max-width: 800px;
+             max-width: 800px;
             height: 50%;
             max-height: 50%;
             overflow: auto;
@@ -47,7 +47,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
+            /* Centra el modal en la pantalla */
         }
 
         .modal-imagen {
@@ -57,7 +57,7 @@
 
         .contenido-adicional {
             display: none;
-   
+     
         }
 
         .imagenpro {
@@ -69,7 +69,7 @@
 
         .imagenpro:hover {
             transform: scale(1.2);
-            /* Aumento de tamaño en el hover */
+       
         }
 
         .boton-despliegue {
@@ -82,7 +82,7 @@
             animation-duration: 0ms;
             position: relative;
             left: 500px;
-      
+    
         }
 
         .contenedor {
@@ -101,20 +101,15 @@
 
         .fotografia {
             position: absolute;
-  
             top: 90px;
-
             left: 20px;
-         
             width: 100px;
             height: 100px;
         }
 
         .descri {
-  
             top: 10px;
             left: 10px;
-            
             width: 250px;
             height: 250px
         }
@@ -129,7 +124,7 @@
             height: 180px;
             border-radius: 50%;
             overflow: hidden;
-
+          
         }
 
         .figuras {
@@ -137,7 +132,7 @@
             align-items: center;
             gap: 20px;
             margin-bottom: 50px;
-
+        
         }
 
         .imagen {
@@ -154,6 +149,7 @@
 
         .descripcion {
             width: 50%;
+
         }
 
         .descripcion p {
@@ -190,7 +186,7 @@
             justify-content: center;
             align-items: center;
             gap: 100px;
-
+         
         }
 
         .poscubo {
@@ -214,7 +210,6 @@
             width: 100px;
             height: 100px;
             border: 4px solid #00bcd4;
-            /* Cambiado a azul claro */
             box-sizing: border-box;
             background: none;
         }
@@ -268,7 +263,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes Sociales</title>
-    <!-- Enlace a Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <header>
@@ -401,7 +395,49 @@
                 <p>Certificado obtenido en Platzy, donde enseñaba Python desde cero hasta un nivel avanzado.</p>
             </div>
         </div>
-       
+
+        <hr>
+        <div class="figuras">
+            <div>
+                <img class="imagen" src="Imagenes/Certificado udec.png" alt="Imagen 3" onclick="abrirModal(this)">
+            </div>
+            <div class="descripcion">
+                <p>Certificado obtenido en la universidad de Cundinamarca por participar en el taller de diseño grafico.</p>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="figuras">
+            <div>
+                <img class="imagen" src="Imagenes/Udec.png" alt="Imagen 3" onclick="abrirModal(this)">
+            </div>
+            <div class="descripcion">
+                <p>Certificado obtenido en la universidad de Cundinamarca por participar en el taller de estadistica, con el fin de implementar
+                     herramientas adecuadas para el analisis de datos.</p>
+            </div>
+        </div>
+
+        <hr>
+        <div class="figuras">
+            <div>
+                <img class="imagen" src="Imagenes/Matlap.png" alt="Imagen 3" onclick="abrirModal(this)">
+            </div>
+            <div class="descripcion">
+                <p>Certificado obtenido en la Pagina de Math Words el cual infiere en el contro de Simulink una herramienta de Matlap.</p>
+            </div>
+        </div>
+
+        <hr>
+        <div class="figuras">
+            <div>
+                <img class="imagen" src="Imagenes/matlap1.png" alt="Imagen 3" onclick="abrirModal(this)">
+            </div>
+            <div class="descripcion">
+                <p>Certificado obtenido en la Pagina de Math Words el cual infiere en el contro de Stateflow onramp el cual es un curso
+                     intruductorio sobre Math-lap.</p>
+            </div>
+        </div>
+        <!-- Agregar más imágenes y descripciones aquí -->
     </div>
 
     <footer class="footer">
@@ -453,3 +489,4 @@
 </body>
 
 </html>
+
