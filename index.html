@@ -346,8 +346,9 @@
                 <img class="imagen" src="Imagenes/fundacion.png" alt="Imagen 2" onclick="abrirModal(this)">
                 <p class="descri"> En la segunda fase se llevó esta base a prueba, en la fundación Santo Cristo de Ubate donde se realizó una simulación entre una persona que no maneja el lenguaje de señas y una persona con discapacidad auditiva. </p>
                 <img class="imagen" src="Imagenes/prueba2.png" alt="Imagen 3" onclick="abrirModal(this)">
-                <p class="descri"> Con base a la información adquirida en la fundación Santo Cristo se pudo obtener nuevas bases para gestionar el proyecto las cuales fueron implementar OpenCV (una librería de Python que permite la activación de la cámara de dispositivo) con esto se pudo crear un entrenamiento el cual identifica las diferentes posiciones de las manos y reconoce qué letra del lenguaje de señas.</p>
-                <!-- Agregar más imágenes aquí -->
+                <p class="descri"> Con base a la información adquirida en la fundación Santo Cristo se pudo obtener nuevas bases para gestionar el proyecto las cuales fueron implementar OpenCV (una librería de Python que permite la activación de la cámara de dispositivo) con esto se pudo crear un entrenamiento el cual 
+                    identifica las diferentes posiciones de las manos y reconoce qué letra del lenguaje de señas.</p>
+
             </div>
         </div>
         <script>
@@ -360,11 +361,20 @@
                 }
             }
         </script>
-        <hr>
 
+        <hr>
         <h1 class="certi">Certificados</h1>
         <div class="figuras">
-
+            <div>
+                <img class="imagen" src="Imagenes/Apps.png" alt="Imagen 2" onclick="abrirModal(this)">
+            </div>
+            <div class="descripcion">
+                <p>Certificado obtenido en Udemy, en el cual se explicaba todas herramientas de Google Apps Script, 
+                    explicando desde Google gmail, Google Sheets hasta Script y SQL.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="figuras">
             <div>
                 <img class="imagen" src="Imagenes/certificadoplatzy.png" alt="Imagen 2" onclick="abrirModal(this)">
             </div>
@@ -372,6 +382,7 @@
                 <p>Certificado obtenido en Platzy, para prevenir ciberataques mediante las buenas prácticas de seguridad.</p>
             </div>
         </div>
+
         <hr>
         <div class="figuras">
             <div>
@@ -383,7 +394,6 @@
         </div>
         <hr>
         <div class="figuras">
-
             <div>
                 <img class="imagen" src="Imagenes/Certificado-ingles-b1.jpeg" alt="Imagen 2" onclick="abrirModal(this)">
             </div>
@@ -393,7 +403,6 @@
         </div>
         <hr>
         <div class="figuras">
-
             <div>
                 <img class="imagen" src="Imagenes/certificado platzy py.png" alt="Imagen 2" onclick="abrirModal(this)">
             </div>
@@ -401,7 +410,6 @@
                 <p>Certificado obtenido en Platzy, donde enseñaba Python desde cero hasta un nivel avanzado.</p>
             </div>
         </div>
-
         <hr>
         <div class="figuras">
             <div>
@@ -410,8 +418,7 @@
             <div class="descripcion">
                 <p>Certificado obtenido en la universidad de Cundinamarca por participar en el taller de diseño grafico.</p>
             </div>
-        </div>
-        
+        </div>       
         <hr>
         <div class="figuras">
             <div>
@@ -422,7 +429,6 @@
                      herramientas adecuadas para el analisis de datos.</p>
             </div>
         </div>
-
         <hr>
         <div class="figuras">
             <div>
@@ -432,7 +438,6 @@
                 <p>Certificado obtenido en la Pagina de Math Words el cual infiere en el contro de Simulink una herramienta de Matlap.</p>
             </div>
         </div>
-
         <hr>
         <div class="figuras">
             <div>
@@ -443,23 +448,17 @@
                      intruductorio sobre Math-lap.</p>
             </div>
         </div>
-        <!-- Agregar más imágenes y descripciones aquí -->
     </div>
-
     <footer class="footer">
         <div class="creditos">
             <p>Hecho por Pedro Pascual Murcia Vargas </p>
         </div>
         <div class="redes-sociales">
             <p>Conoceme mas</p>
-
             <a href="https://www.instagram.com/pedromvargas9?igsh=MW1ocG03NTA4eWlhdw=="target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/pedro-murcia-8b6424194/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/pedromurcia1232/Conversaci-n-voz-a-texto" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.youtube.com/watch?v=PYIdQR96Ojo&t=110s" target="_blank"><i class="fab fa-youtube"></i></a>
-
-
-
         </div>
     </footer>
 
@@ -468,7 +467,6 @@
             <img class="modal-imagen" id="imagenModal">
         </span>
     </div>
-
     <script>
         function mostrarContenido() {
             var contenido = document.getElementById("contenido");
@@ -478,24 +476,17 @@
                 contenido.style.display = "none"; // Oculta el contenido
             }
         }
-
         function abrirModal(imagen) {
             var modal = document.getElementById("modal");
             var modalImg = document.getElementById("imagenModal");
             modal.style.display = "block";
             modalImg.src = imagen.src;
         }
-
         function cerrarModal() {
             var modal = document.getElementById("modal");
             modal.style.display = "none";
         }
     </script>
-
 </body>
-
-</html>
-
-
 </html>
 
