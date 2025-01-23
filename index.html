@@ -95,6 +95,33 @@
             margin: 0 auto;
             padding: 20px;
         }
+        .contenedor1 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        .botones-inicio {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .botones-inicio button {
+            padding: 10px 20px;
+            background-color: #00bcd4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .botones-inicio button:hover {
+            background-color: #008ba3;
+        }
 
         .informacion {
             padding: 20px;
@@ -102,6 +129,21 @@
             border: 3px solid #00bcd4;
             border-radius: 10px;
             margin-bottom: 20px;
+        }
+
+        .proyecto {
+            margin-bottom: 30px;
+            display: none;
+        }
+
+        .proyecto img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+            border: 3px solid #00bcd4;
+            border-radius: 10px;
         }
 
         .fotografia {
@@ -293,65 +335,128 @@
                 <div class="cara cara-izquierda"></div>
                 <div class="cara cara-trasera"></div>
             </div>
-            <div class="poscubo">
-                <div class="figuras">
-
-                    <div class="cubo">
-                        <div class="cara cara-frontal"></div>
-                        <div class="cara cara-superior"></div>
-                        <div class="cara cara-inferior"></div>
-                        <div class="cara cara-derecha"></div>
-                        <div class="cara cara-izquierda"></div>
-                        <div class="cara cara-trasera"></div>
-                    </div>
-                    <div class="cubo">
-                        <div class="cara cara-frontal"></div>
-                        <div class="cara cara-superior"></div>
-                        <div class="cara cara-inferior"></div>
-                        <div class="cara cara-derecha"></div>
-                        <div class="cara cara-izquierda"></div>
-                        <div class="cara cara-trasera"></div>
-                    </div>
-
-                </div>
-
-
-            </div>
+            
         </div>
+       
+
         <div class="informacion">
             <h2>Información Personal</h2>
-            <p>Soy estudiante de ingeniería de sistemas, actualmente me encuentro cursando mi último semestre, me desempeño
-                con manejo del lenguaje de programación Python, con el cual he realizado algunos proyectos, los cuales explicaré
-                en el contenido de este Portafolio también mostrando algunos de mis logros que he realizado.
-            </p>
+            <p><strong>Nombre:</strong> Pedro Pascual Murcia Vargas</p>
+            <p><strong>Email:</strong> pmurciavargas4@gmail.com</p>
+            <p><strong>Teléfono:</strong> +57 3133732310</p>
+            <p>Soy estudiante de ingeniería de sistemas en mi último semestre. Tengo experiencia en Python y he trabajado en varios proyectos que buscan facilitar la interacción inclusiva.</p>
+            <div class="informacion">
+                <h2>Mi Ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.874583214093!2d-74.0285861!3d4.7581942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99f1c77e8c2b%3A0x87b6e9f548f450ed!2s4%C2%B045'29.6%22N+74%C2%B001'32.7%22W!5e0!3m2!1ses!2sco!4v1696870000000" allowfullscreen="" loading="lazy"></iframe>
 
-        </div>
+            </div>
+    
         <div class="fotografia">
             <div class="imagenperfil">
                 <img class="imagen" src="Imagenes/tunja.jpeg" alt="Imagen 1" onclick="abrirModal(this)">
 
             </div>
         </div>
-        <button class="boton-despliegue" onclick="mostrarContenido()">Proyecto</button>
-        <hr>
+       
 
-        <div class="contenido-adicional" id="contenido">
-            <p>El proyecto consiste en realizar un aplicativo que permita a las personas con discapacidad auditiva,
-                a interactuar con las personas que no manejan el lenguaje de señas. Para más información sobre este proceso verlo en mi canal de YouTube y perfil de LinkedIn los cuales lo pueden encontrar en la parte inferior de la página.</p>
-            <div class="figuras">
-                <p>El proyecto consiste en realizar un aplicativo que permita a las personas con discapacidad auditiva,
-                    a interactuar con las personas que no manejan el lenguaje de señas. Para más información sobre este proceso verlo en mi perfil de LinkedIn.</p>
-                <img class="imagen" src="Imagenes/prueba.png" alt="Imagen 1" onclick="abrirModal(this)">
-                <p class="descri"> En la primera fase llevo a cabo mediante el lenguaje de programación Python donde se utilizaba este para realizar una conversación entre personas con discapacidad auditiva y las personas que no manejan el lenguaje de señas.</p>
-                <img class="imagen" src="Imagenes/fundacion.png" alt="Imagen 2" onclick="abrirModal(this)">
-                <p class="descri"> En la segunda fase se llevó esta base a prueba, en la fundación Santo Cristo de Ubate donde se realizó una simulación entre una persona que no maneja el lenguaje de señas y una persona con discapacidad auditiva. </p>
-                <img class="imagen" src="Imagenes/prueba2.png" alt="Imagen 3" onclick="abrirModal(this)">
-                <p class="descri"> Con base a la información adquirida en la fundación Santo Cristo se pudo obtener nuevas bases para gestionar el proyecto las cuales fueron implementar OpenCV (una librería de Python que permite la activación de la cámara de dispositivo) con esto se pudo crear un entrenamiento el cual 
-                    identifica las diferentes posiciones de las manos y reconoce qué letra del lenguaje de señas.</p>
-
+        <div class="contenedor1">
+            <!-- Botones de Navegación -->
+            <div class="botones-inicio">
+                <button onclick="mostrarSeccion('certificados')">Certificados</button>
+                <button onclick="mostrarSeccion('proyecto-existente')">Proyecto Silent Voice</button>
+                <button onclick="mostrarSeccion('nuevo-proyecto')">Proyecto Planes de trabajo</button>
+                <button onclick="mostrarSeccion('Herramientas')">Herramientas</button>
             </div>
+
+        
+
+        <div id="proyecto-existente" class="proyecto">
+            <div class="informacion">
+            
+                <p>El proyecto consiste en realizar un aplicativo que permita a las personas con discapacidad auditiva,
+                    a interactuar con las personas que no manejan el lenguaje de señas. Para más información sobre este proceso verlo en mi canal de YouTube y perfil de LinkedIn los cuales lo pueden encontrar en la parte inferior de la página.</p>
+                <div class="figuras">
+                    
+                    <img class="imagen" src="Imagenes/prueba.png" alt="Imagen 1" onclick="abrirModal(this)">
+                    <p class="descri"> En la primera fase llevo a cabo mediante el lenguaje de programación Python donde se utilizaba este para realizar una conversación entre personas con discapacidad auditiva y las personas que no manejan el lenguaje de señas.</p>
+                    <img class="imagen" src="Imagenes/fundacion.png" alt="Imagen 2" onclick="abrirModal(this)">
+                    <p class="descri"> En la segunda fase se llevó esta base a prueba, en la fundación Santo Cristo de Ubate donde se realizó una simulación entre una persona que no maneja el lenguaje de señas y una persona con discapacidad auditiva. </p>
+                    <img class="imagen" src="Imagenes/prueba2.png" alt="Imagen 3" onclick="abrirModal(this)">
+                    <p class="descri"> Con base a la información adquirida en la fundación Santo Cristo se pudo obtener nuevas bases para gestionar el proyecto las cuales fueron implementar OpenCV (una librería de Python que permite la activación de la cámara de dispositivo) con esto se pudo crear un entrenamiento el cual 
+                        identifica las diferentes posiciones de las manos y reconoce qué letra del lenguaje de señas.</p>
+
+                        <script>
+                            function mostrarContenido() {
+                                var contenido = document.getElementById("contenido");
+                                if (contenido.style.display === "none") {
+                                    contenido.style.display = "block"; // Muestra el contenido
+                                } else {
+                                    contenido.style.display = "none"; // Oculta el contenido
+                                }
+                            }
+                            function abrirModal(imagen) {
+                                var modal = document.getElementById("modal");
+                                var modalImg = document.getElementById("imagenModal");
+                                modal.style.display = "block";
+                                modalImg.src = imagen.src;
+                            }
+                            function cerrarModal() {
+                                var modal = document.getElementById("modal");
+                                modal.style.display = "none";
+                            }
+                        </script>
+    
         </div>
-        <script>
+    </div> </div>
+
+
+    <!-- Nuevo Proyecto -->
+    <div id="nuevo-proyecto" class="proyecto">
+        <div class="informacion">
+            
+            <p>Durante mi proceso de practica en la empresa ISA INTERCOLOMBIA se desarrollo un aplicativo web para la automatizacion de los planes de trabajo, los cuales consisten en la documentacion de los manteniminetos de las subestaciones de energia del pais
+                este aplicativo se desarrollo mediante el lenguaje de programación Python, Java Script y la implementacion de HTML, este aplicativo cumple la funcion de subir la informacion al software de gestión empresarial SAP, esto mediante la creacion de SCripts para la automatizacion de las condiciones de equipo al momento de realizar mantenimineto.</p>
+            <div class="figuras">
+                
+                <img class="imagen" src="Imagenes/plan_trabajo.jpeg" alt="Imagen 1" onclick="abrirModal(this)">
+                <p class="descri"> Visita a la subestacion San Felipe, para comprender como era el funcionamiento y procedimientos al momento de realizar manteniminetos de las subestaciones de energia.</p>
+                <img class="imagen" src="Imagenes/Arquitectura.png" alt="Imagen 3" onclick="abrirModal(this)">
+                <p class="descri"> Interfaz del aplicativo, mendiante la implementacion de arqitectura limpia, conexion de Scripts diseño con HTML y CSS</p>
+                <img class="imagen" src="Imagenes/inicio.png" alt="Imagen 2" onclick="abrirModal(this)">
+                <p class="descri"> inicio de sesion del aplicativo, con el cual solicita las credenciales para iniciar sesion en SAP lo cual perimitira subir la informacion del plan de trabajo. </p>
+                <img class="imagen" src="Imagenes/crear.png" alt="Imagen 3" onclick="abrirModal(this)">
+                <p class="descri">creacion de plan de trabajo, mediante la implementacion del aplicativo web, en el cual tambien se automatizan las condiciones de equipo para posteriormente subir la informacion a SAP.</p>
+                <img class="imagen" src="Imagenes/subir.png" alt="Imagen 3" onclick="abrirModal(this)">
+                <p class="descri">Plan de trabajo creado y subido con exito a SAP.</p>
+
+                    <script>
+                        function mostrarContenido() {
+                            var contenido = document.getElementById("contenido");
+                            if (contenido.style.display === "none") {
+                                contenido.style.display = "block"; // Muestra el contenido
+                            } else {
+                                contenido.style.display = "none"; // Oculta el contenido
+                            }
+                        }
+                        function abrirModal(imagen) {
+                            var modal = document.getElementById("modal");
+                            var modalImg = document.getElementById("imagenModal");
+                            modal.style.display = "block";
+                            modalImg.src = imagen.src;
+                        }
+                        function cerrarModal() {
+                            var modal = document.getElementById("modal");
+                            modal.style.display = "none";
+                        }
+                    </script>
+
+    </div>
+</div></div>
+
+
+
+
+        <script>    
             function mostrarContenido() {
                 var contenido = document.getElementById("contenido");
                 if (contenido.style.display === "none") {
@@ -362,91 +467,217 @@
             }
         </script>
 
-        <hr>
-        <h1 class="certi">Certificados</h1>
-        <div class="figuras">
-            <div>
-                <img class="imagen" src="Imagenes/Apps.png" alt="Imagen 2" onclick="abrirModal(this)">
-            </div>
-            <div class="descripcion">
-                <p>Certificado obtenido en Udemy, en el cual se explicaba todas herramientas de Google Apps Script, 
-                    explicando desde Google gmail, Google Sheets hasta Script y SQL.</p>
-            </div>
+        <div id="Herramientas" class="proyecto">
+            <div class="informacion">
+                <p>Esta sección destaca las herramientas con las que estoy familiarizado y que he empleado activamente en el desarrollo de diversos proyectos. Cada una de estas herramientas ha sido clave para afrontar los retos técnicos, optimizar procesos y garantizar 
+                    la calidad en los resultados obtenidos. Gracias a ellas, he podido materializar ideas, cumplir objetivos y adaptarme a diferentes contextos y necesidades.</p>
+                <div class="figuras">
+                    
+                    <img class="imagen" src="Imagenes/pythoni.png" alt="Imagen 1" onclick="abrirModal(this)">
+                     <div class="descri">
+                        <h1>Python</h1>
+                    <p > Lenguaje versátil que utilizo para desarrollar soluciones automatizadas, análisis de datos y aplicaciones robustas.</p>
+                    </div>
+                    <img class="imagen" src="Imagenes/mongodb.png" alt="Imagen 3" onclick="abrirModal(this)">
+                    <div class="descri">
+                    <h1 >Mongo -Db</h1>
+                    <p >Base de datos NoSQL flexible y escalable, ideal para manejar datos estructurados y no estructurados en mis proyectos.</p>
+                    </div>
+                    <img class="imagen" src="Imagenes/365.webp" alt="Imagen 2" onclick="abrirModal(this)">
+                    <div class="descri">
+                    <h1>Microsoft 365</h1>
+                    <p>Suite de productividad que empleo para colaboración, gestión de documentos y optimización de flujos de trabajo. </p>
+                    </div>
+                    <img class="imagen" src="Imagenes/sap.png" alt="Imagen 3" onclick="abrirModal(this)">
+                    <div class="descri">
+                        <h1>SAP</h1>
+                    <p >Herramienta empresarial que manejo para la planificación y gestión eficiente de recursos y procesos organizacionales.</p>
+                    </div>
+                    <img class="imagen" src="Imagenes/css.jpg" alt="Imagen 3" onclick="abrirModal(this)">
+                    <div class="descri">
+                        <h1>Tecnologías Frontend: HTML, CSS y JavaScriptc</h1>
+                    <p >Conjunto de herramientas clave para diseñar y desarrollar interfaces web dinámicas, intuitivas y atractivas.</p>
+                    </div>
+                    
+                    
+                        <script>
+                            function mostrarContenido() {
+                                var contenido = document.getElementById("contenido");
+                                if (contenido.style.display === "none") {
+                                    contenido.style.display = "block"; // Muestra el contenido
+                                } else {
+                                    contenido.style.display = "none"; // Oculta el contenido
+                                }
+                            }
+                            function abrirModal(imagen) {
+                                var modal = document.getElementById("modal");
+                                var modalImg = document.getElementById("imagenModal");
+                                modal.style.display = "block";
+                                modalImg.src = imagen.src;
+                            }
+                            function cerrarModal() {
+                                var modal = document.getElementById("modal");
+                                modal.style.display = "none";
+                            }
+                        </script>
+    
         </div>
-        <hr>
-        <div class="figuras">
-            <div>
-                <img class="imagen" src="Imagenes/certificadoplatzy.png" alt="Imagen 2" onclick="abrirModal(this)">
-            </div>
-            <div class="descripcion">
-                <p>Certificado obtenido en Platzy, para prevenir ciberataques mediante las buenas prácticas de seguridad.</p>
+
+
+
+
             </div>
         </div>
 
         <hr>
-        <div class="figuras">
-            <div>
-                <img class="imagen" src="Imagenes/certificadoudemy.png" alt="Imagen 3" onclick="abrirModal(this)">
+         <!-- Certificados -->
+         <div id="certificados" class="certificados">
+            <h2>Certificados</h2>
+            <h1 class="certi">Certificados</h1>
+            <p><div class="figuras">
+                <div>
+                    <img class="imagen" src="Imagenes/Apps.png" alt="Imagen 2" onclick="abrirModal(this)">
+                </div>
+                <div class="descripcion">
+                    <p>Certificado obtenido en Udemy, en el cual se explicaba todas herramientas de Google Apps Script, 
+                        explicando desde Google gmail, Google Sheets hasta Script y SQL.</p>
+                </div>
             </div>
-            <div class="descripcion">
-                <p>Certificado obtenido en Udemy el cual enseñaba Python desde cero y finalizaba con el desarrollo de un proyecto de reconocimiento facial.</p>
+            <hr>
+            <div class="figuras">
+                <div>
+                    <img class="imagen" src="Imagenes/certificadoplatzy.png" alt="Imagen 2" onclick="abrirModal(this)">
+                </div>
+                <div class="descripcion">
+                    <p>Certificado obtenido en Platzy, para prevenir ciberataques mediante las buenas prácticas de seguridad.</p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="figuras">
-            <div>
-                <img class="imagen" src="Imagenes/Certificado-ingles-b1.jpeg" alt="Imagen 2" onclick="abrirModal(this)">
+    
+            <hr>
+            <div class="figuras">
+                <div>
+                    <img class="imagen" src="Imagenes/certificadoudemy.png" alt="Imagen 3" onclick="abrirModal(this)">
+                </div>
+                <div class="descripcion">
+                    <p>Certificado obtenido en Udemy el cual enseñaba Python desde cero y finalizaba con el desarrollo de un proyecto de reconocimiento facial.</p>
+                </div>
             </div>
-            <div class="descripcion">
-                <p>Certificado obtenido en la academia Shakespeare, la cual me sirvió para tener un nivel de inglés B1.</p>
+            <hr>
+            <div class="figuras">
+                <div>
+                    <img class="imagen" src="Imagenes/Certificado-ingles-b1.jpeg" alt="Imagen 2" onclick="abrirModal(this)">
+                </div>
+                <div class="descripcion">
+                    <p>Certificado obtenido en la academia Shakespeare, la cual me sirvió para tener un nivel de inglés B1.</p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="figuras">
-            <div>
-                <img class="imagen" src="Imagenes/certificado platzy py.png" alt="Imagen 2" onclick="abrirModal(this)">
+            <hr>
+            <div class="figuras">
+                <div>
+                    <img class="imagen" src="Imagenes/certificado platzy py.png" alt="Imagen 2" onclick="abrirModal(this)">
+                </div>
+                <div class="descripcion">
+                    <p>Certificado obtenido en Platzy, donde enseñaba Python desde cero hasta un nivel avanzado.</p>
+                </div>
             </div>
-            <div class="descripcion">
-                <p>Certificado obtenido en Platzy, donde enseñaba Python desde cero hasta un nivel avanzado.</p>
+            <hr>
+            <div class="figuras">
+                <div>
+                    <img class="imagen" src="Imagenes/Certificado udec.png" alt="Imagen 3" onclick="abrirModal(this)">
+                </div>
+                <div class="descripcion">
+                    <p>Certificado obtenido en la universidad de Cundinamarca por participar en el taller de diseño grafico.</p>
+                </div>
+            </div>       
+            <hr>
+            <div class="figuras">
+                <div>
+                    <img class="imagen" src="Imagenes/Udec.png" alt="Imagen 3" onclick="abrirModal(this)">
+                </div>
+                <div class="descripcion">
+                    <p>Certificado obtenido en la universidad de Cundinamarca por participar en el taller de estadistica, con el fin de implementar
+                         herramientas adecuadas para el analisis de datos.</p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="figuras">
-            <div>
-                <img class="imagen" src="Imagenes/Certificado udec.png" alt="Imagen 3" onclick="abrirModal(this)">
+            <hr>
+            <div class="figuras">
+                <div>
+                    <img class="imagen" src="Imagenes/Matlap.png" alt="Imagen 3" onclick="abrirModal(this)">
+                </div>
+                <div class="descripcion">
+                    <p>Certificado obtenido en la Pagina de Math Words el cual infiere en el contro de Simulink una herramienta de Matlap.</p>
+                </div>
             </div>
-            <div class="descripcion">
-                <p>Certificado obtenido en la universidad de Cundinamarca por participar en el taller de diseño grafico.</p>
+            <hr>
+            <div class="figuras">
+                <div>
+                    <img class="imagen" src="Imagenes/matlap1.png" alt="Imagen 3" onclick="abrirModal(this)">
+                </div>
+                <div class="descripcion">
+                    <p>Certificado obtenido en la Pagina de Math Words el cual infiere en el contro de Stateflow onramp el cual es un curso
+                         intruductorio sobre Math-lap.</p>
+                </div>
+            </div></p>
+            <div id="nuevo-proyecto" class="proyecto">
+                <div class="informacion">
+            
+                    <p>El proyecto consiste en realizar un aplicativo que permita a las personas con discapacidad auditiva,
+                        a interactuar con las personas que no manejan el lenguaje de señas. Para más información sobre este proceso verlo en mi canal de YouTube y perfil de LinkedIn los cuales lo pueden encontrar en la parte inferior de la página.</p>
+                    <div class="figuras">
+                        <p>El proyecto consiste en realizar un aplicativo que permita a las personas con discapacidad auditiva,
+                            a interactuar con las personas que no manejan el lenguaje de señas. Para más información sobre este proceso verlo en mi perfil de LinkedIn.</p>
+                        <img class="imagen" src="Imagenes/prueba.png" alt="Imagen 1" onclick="abrirModal(this)">
+                        <p class="descri"> En la primera fase llevo a cabo mediante el lenguaje de programación Python donde se utilizaba este para realizar una conversación entre personas con discapacidad auditiva y las personas que no manejan el lenguaje de señas.</p>
+                        <img class="imagen" src="Imagenes/fundacion.png" alt="Imagen 2" onclick="abrirModal(this)">
+                        <p class="descri"> En la segunda fase se llevó esta base a prueba, en la fundación Santo Cristo de Ubate donde se realizó una simulación entre una persona que no maneja el lenguaje de señas y una persona con discapacidad auditiva. </p>
+                        <img class="imagen" src="Imagenes/prueba2.png" alt="Imagen 3" onclick="abrirModal(this)">
+                        <p class="descri"> Con base a la información adquirida en la fundación Santo Cristo se pudo obtener nuevas bases para gestionar el proyecto las cuales fueron implementar OpenCV (una librería de Python que permite la activación de la cámara de dispositivo) con esto se pudo crear un entrenamiento el cual 
+                            identifica las diferentes posiciones de las manos y reconoce qué letra del lenguaje de señas.</p>
+    
+                            <script>
+                                function mostrarContenido() {
+                                    var contenido = document.getElementById("contenido");
+                                    if (contenido.style.display === "none") {
+                                        contenido.style.display = "block"; // Muestra el contenido
+                                    } else {
+                                        contenido.style.display = "none"; // Oculta el contenido
+                                    }
+                                }
+                                function abrirModal(imagen) {
+                                    var modal = document.getElementById("modal");
+                                    var modalImg = document.getElementById("imagenModal");
+                                    modal.style.display = "block";
+                                    modalImg.src = imagen.src;
+                                }
+                                function cerrarModal() {
+                                    var modal = document.getElementById("modal");
+                                    modal.style.display = "none";
+                                }
+                            </script>
+        
             </div>
-        </div>       
-        <hr>
-        <div class="figuras">
-            <div>
-                <img class="imagen" src="Imagenes/Udec.png" alt="Imagen 3" onclick="abrirModal(this)">
-            </div>
-            <div class="descripcion">
-                <p>Certificado obtenido en la universidad de Cundinamarca por participar en el taller de estadistica, con el fin de implementar
-                     herramientas adecuadas para el analisis de datos.</p>
-            </div>
-        </div>
-        <hr>
-        <div class="figuras">
-            <div>
-                <img class="imagen" src="Imagenes/Matlap.png" alt="Imagen 3" onclick="abrirModal(this)">
-            </div>
-            <div class="descripcion">
-                <p>Certificado obtenido en la Pagina de Math Words el cual infiere en el contro de Simulink una herramienta de Matlap.</p>
-            </div>
-        </div>
-        <hr>
-        <div class="figuras">
-            <div>
-                <img class="imagen" src="Imagenes/matlap1.png" alt="Imagen 3" onclick="abrirModal(this)">
-            </div>
-            <div class="descripcion">
-                <p>Certificado obtenido en la Pagina de Math Words el cual infiere en el contro de Stateflow onramp el cual es un curso
-                     intruductorio sobre Math-lap.</p>
-            </div>
+        </div> </div>
+
+            <script>
+                function mostrarContenido() {
+                    var contenido = document.getElementById("contenido");
+                    if (contenido.style.display === "none") {
+                        contenido.style.display = "block"; // Muestra el contenido
+                    } else {
+                        contenido.style.display = "none"; // Oculta el contenido
+                    }
+                }
+                function abrirModal(imagen) {
+                    var modal = document.getElementById("modal");
+                    var modalImg = document.getElementById("imagenModal");
+                    modal.style.display = "block";
+                    modalImg.src = imagen.src;
+                }
+                function cerrarModal() {
+                    var modal = document.getElementById("modal");
+                    modal.style.display = "none";
+                }
+            </script>
         </div>
     </div>
     <footer class="footer">
@@ -459,6 +690,10 @@
             <a href="https://www.linkedin.com/in/pedro-murcia-8b6424194/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/pedromurcia1232/Conversaci-n-voz-a-texto" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.youtube.com/watch?v=PYIdQR96Ojo&t=110s" target="_blank"><i class="fab fa-youtube"></i></a>
+
+            <a href="https://wa.me/573133732310" target="_blank">
+                <i class="fab fa-whatsapp"></i></a>
+            
         </div>
     </footer>
 
@@ -487,5 +722,33 @@
             modal.style.display = "none";
         }
     </script>
+    
+    <script>
+        function mostrarSeccion(id) {
+            const secciones = document.querySelectorAll('.proyecto, .certificados');
+            secciones.forEach(seccion => {
+                seccion.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+
+    <script>
+        function mostrarSeccion(id) {
+            const seccion = document.getElementById(id);
+            const secciones = document.querySelectorAll('.proyecto, .certificados');
+    
+            // Oculta todas las secciones excepto la seleccionada
+            secciones.forEach(sec => {
+                if (sec !== seccion) sec.style.display = 'none';
+            });
+    
+            // Alternar visibilidad de la sección seleccionada
+            seccion.style.display = seccion.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+
+    
 </body>
 </html>
